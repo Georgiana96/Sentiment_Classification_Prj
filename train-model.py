@@ -140,7 +140,7 @@ for i in filenames:
 text_file2.close()
 
 
-cm = confusion_matrix(test_generator.classes[test_generator.index_array], pred_class)
+cm = confusion_matrix(ground_truth, predicted_classes)
 print("Confusion matrix:")
 print(cm)
 if SAVE_MODEL:
