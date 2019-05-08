@@ -114,17 +114,7 @@ filenames=test_generator.filenames
 print("File names:")
 print(filenames)
 
-print("---------OPTION 1-------")
-print("Predictions:")
-print(pred)
-classes = test_generator.classes[test_generator.index_array]
-print("Classes:")
-print(classes)
-pred_class = np.argmax(pred, axis=-1)
-print("Pred classes:")
-print(pred_class)
 
-print("---------OPTION 2--------")
 ground_truth = test_generator.classes
 print("Ground truth:")
 print(ground_truth)
